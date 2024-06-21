@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website ini adalah website profile dari provinsi DKI Jakarta" />
+  <link rel="icon" href="./images/musikku.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Dunia Musik</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#"><img src="./images/musikku.png" alt="Logo" class="nav-icon" /></a>
+    <nav class="navbar">
+      <a class="nav-item"></a><button class="notification-button">
+        <li class="fa fa-bell"></li>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#sejarah">Beranda</a></li>
+        <li class="nav-item"><a href="#lagu">Musik</a></li>
+        <li class="nav-item"><a href="#card">Daftar Lagu Terbaru</a></li>
+        <li class="nav-item"><a href="#feedback">Request Lagu Terbaru</a></li>
+
+
+        
+
+        <li class="nav-item"></li><button class="logout-btn" onclick="logout()">Logout</button>
+
+        <li class="nav-item">
+          <img src="images/hacker.png" alt="Profile Avatar" class="nav-icon" />
+        </li>
+      </ul>
+      </a>
+
+    </nav>
+
+    <div class="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+  <main>
+    <section class="jumbotron">
+      <div class="container title-jumbotron" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="title-dki title-outline">DUNIA</h1>
+        <h1 class="title-jakarta">MUSIK</h1>
+      </div>
+    </section>
+    <section id="sejarah" class="section-container">
+      <div class="container section-content" data-aos="fade-up" data-aos-duration="2000">
+        <img src="./images/musikku.png" alt="sejarah" class="image-section" />
+        <div>
+          <h2 class="section-title">Sejarah Musik Di Indonesia</h2>
+          <p>
+            Musik telah menjadi bagian integral dari kehidupan manusia sejak zaman prasejarah.
+            Awalnya, <strong>Musik</strong> diciptakan dari suara alam dan bunyi-bunyian sederhana yang
+            diproduksi oleh alat-alat primitif. Seiring berjalannya waktu, musik berevolusi
+            menjadi bentuk seni yang kompleks dan beragam, mencerminkan budaya, kepercayaan,
+            dan perasaan masyarakat yang menciptakannya.
+          </p>
+          <p>
+            Pada masa <strong>Prasejarah</strong>, manusia menggunakan musik sebagai alat komunikasi dan ritual.
+            Instrumen pertama yang dikenal adalah alat perkusi sederhana dan seruling yang terbuat dari
+            tulang atau kayu. Musik pada masa ini berfungsi untuk upacara keagamaan,
+            perayaan, dan komunikasi jarak jauh.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="lagu" class="section-container">
+      <div class="container section-content" data-aos="fade-up" data-aos-duration="2000">
+        <img src="./images/laguku1.png" alt="lagu" class="image-section" />
+
+        <div class="container">
+          <input type="text" id="searchInput" placeholder="Search for songs...">
+          <button id="searchButton">Search</button>
+          <div class="song-list">
+            <div class="song-item">
+              <h2 class="song-title">Nasib Muka Cuma Pas - Pasan</h2>
+              <audio controls>
+                <source src="music/Angga Dermawan - Nasib muka cuma pas-pasan, apa memang ini takdir Tuhan.mp3"
+                  type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="song-item">
+              <h2 class="song-title">Kelingan Mantan NDX AKA Pop Punk Cover by Boedak Korporat</h2>
+              <audio controls>
+                <source src="music/Kelingan Mantan NDX AKA Pop Punk Cover by Boedak Korporat.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="song-item">
+              <h2 class="song-title">Christina - Dudi Dam</h2>
+              <audio controls>
+                <source src="music/Christina - Dudi Dam.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="song-item">
+              <h2 class="song-title">Tukang Bakso</h2>
+              <audio controls>
+                <source src="music/Tukang Bakso.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="song-item">
+              <h2 class="song-title">Joshua Suherman - Air (Diobok - Obok)</h2>
+              <audio controls>
+                <source src="music/Joshua Suherman - Air (Diobok - Obok).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="song-item">
+              <h2 class="song-title">Abang Tukang Bakso - Daffa & Khalista feat Kak Nunuk</h2>
+              <audio controls>
+                <source src="music/Abang Tukang Bakso - Daffa & Khalista feat Kak Nunuk.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="song-item">
+              <h2 class="song-title">Kring Kring Ada Sepeda - Vito - Lagu Anak</h2>
+              <audio controls>
+                <source src="music/Kring Kring Ada Sepeda - Vito - Lagu Anak.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+        </div>
+    </section>
+    <h2 class="section-title">Daftar Lagu Terbaru</h2>
+    <p>
+      Daftar Album Lagu Artis
+    </p>
+    <section id="card" class="grid-container">
+      <div class="card">
+        <img src="images/artis1.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Korea</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/rizky1.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Jazz</b></h4>
+          <p>Rizki Febian</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/rosa.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Rossa</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/tulis.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Tulus</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/ari.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Ari Laso</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/Idgitaf.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Idgitaf</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/ariel.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Ariel</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/charly.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>POP</b></h4>
+          <p>Charly</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="section-container">
+      <div class="container section-content" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="section-title">Request Lagu Terbaru</h2>
+        <p>
+          Jika Anda memiliki request lagu terbaru, silahkan
+          isi formulir dibawah ini.
+        </p>
+        <form class="form-feedback">
+          <label for="topik">Topik</label><br />
+          <input type="text" name="topik" placeholder="Tulis Request Lagu Terbaru" id="topik" /><br />
+          <label for="mintalagu">Mau Lagu Apa</label><br />
+          <select name="mintalagu" id="mintalagu">
+            <br />
+            <option value="" disabled selected>
+              --- Pilih Lagu Yang Anda Mau ---
+            </option>
+            <option value="POP">POP</option>
+            <option value="JAZZ">JAZZ</option>
+            <option value="CLASIC">CLASIC</option>
+            <option value="DANGDUT">DANGDUT</option>
+            <option value="HIP-HOP">HIP-HOP</option>
+            <option value="REGGE">REGGE</option>
+          </select><br />
+          <label for="pesan">Pesan</label><br />
+          <textarea name="pesan" id="pesan" placeholder="Tulis Masukan Anda"></textarea><br />
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <span>&copy; 2024 DUNIA_MUSIK_Rezaalamsyahrapi.com</span>
+  </footer>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    window.onload = function () {
+      document.getElementsByClassName("menu-toggle")[0].onclick =
+        function () {
+          const navbar = document.getElementsByClassName("navbar")[0];
+          if (navbar.classList.contains("active")) {
+            navbar.classList.remove("active");
+          } else {
+            navbar.classList.add("active");
+          }
+        };
+    };
+  </script>
+</body>
+
+</html>
+<script src="script.js"></script>
+<script src="logout.js"></script>
